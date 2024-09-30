@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-bg-dark {
+  background-color: #121212;
+}
+
+.custom-bg-primary {
+  background-color: #4BB543 !important;
+}
+
+.font-gray-color-force {
+  color: #BCBCBC !important;
+}
+
+.custom-color-primary {
+  color: #4BB543;
+}
+
+.modal::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: none !important;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #4BB543 !important;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #4BB543 !important;
+}
+
+/*# sourceMappingURL=custom.css.map */

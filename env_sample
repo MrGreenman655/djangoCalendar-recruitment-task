@@ -1,0 +1,14 @@
+SECRET_KEY="fgadsioghdusagbdkjagbniaij823hj4u32ntriubreganauhf8293h98423"
+ALLOWED_HOSTS="['localhost', '127.0.0.1']"
+ALLOWED_CORS="['http://localhost:8000',' http://127.0.0.1:8000']"
+DEBUG=True
+
+WEB_PORT=8000
+
+POSTGRES_DB=calendar_db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=gsdfvkdsjahfldsjkahfldskahflkdsajfldksajflk
+POSTGRES_HOST=calendar_db_host
+
+RECRUITMENT_API_URL="https://rekrutacja.teamwsuws.pl/"
+RECRUITMENT_API_KEY="gafdhmsdgfmghdalkgvjaldsckgjasdlkghq89h2983uy4h023"

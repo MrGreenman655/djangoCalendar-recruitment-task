@@ -1,0 +1,68 @@
+{% extends '_frame.html' %}
+{% load static %}
+{% block content %}
+    <div class="cal-view" id="cal-view">
+        <div class="cal-navbar">
+
+        </div>
+        <div class="cal-calendar">
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content custom-bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"></h5>
+                    <button type="button" class="btn-close custom-bg-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div>
+                        <span>Lokalizacja:</span>
+                        <span class="font-gray-color-force" id="location"></span>
+                    </div>
+                    <div>
+                        <span>Czas trwania(w godzinach):</span>
+                        <span class="font-gray-color-force" id="duration"></span>
+                    </div>
+                    <div>
+                        <span>Godzina rozpoczęcia:</span>
+                        <span class="font-gray-color-force" id="startTime"></span>
+                    </div>
+                    <div>
+                        <span>Godzina zakończenia:</span>
+                        <span class="font-gray-color-force" id="endTime"></span>
+                    </div>
+                    <div>
+                        <span>Link do rejestracji:</span>
+                        <span class="font-gray-color-force" id="registrationLink"></span>
+                    </div>
+                    <div>
+                        <span>Krótki opis:</span>
+                        <span class="font-gray-color-force" id="shortDescription"></span>
+                    </div>
+                    <div>
+                        <span>Tagi:</span>
+                        <span class="font-gray-color-force" id="tags"></span>
+                    </div>
+                    <div>
+                        <span>Długi opis:</span>
+                        <span class="font-gray-color-force" id="longDescription"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ api_get_events_link|json_script:"api_get_events_link" }}
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'myapps/calendarapp/calendar.js' %}"></script>
+{% endblock %}
+{% block extra_css %}
+    <link href="{% static 'myapps/calendarapp/calendar.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}

@@ -1,0 +1,36 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-bg-dark {
+  background-color: $dark-page;
+}
+.custom-bg-primary {
+  background-color: $primary !important;
+}
+
+.font-gray-color-force {
+  color: $font-color-gray !important;
+}
+.custom-color-primary {
+  color: $primary;
+}
+.modal::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: none !important;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: $primary !important;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: $primary !important;
+}
