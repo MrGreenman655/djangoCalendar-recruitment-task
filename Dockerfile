@@ -16,7 +16,3 @@ COPY . /web/
 RUN mkdir -p /web/public/uploads/tmp/ && \
     chown -R app:app /web/public && \
     chmod -R 755 /web/public
-
-CMD python manage.py makemigrations
-CMD python manage.py migrate
-CMD python manage.py collectstatic --noinput
